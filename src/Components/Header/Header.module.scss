@@ -1,0 +1,34 @@
+.header {
+    width: 100%;
+    .imgHolder {
+        margin: 0 auto;
+        width:5rem;
+        padding: 3rem 2rem 1.5rem 2rem;
+        border-radius: 0px 0px 150px 150px;
+        background-color: var(--secondary);
+        img {
+            width: 100%;
+        }
+    }
+    p{
+        margin: 0;
+        color: black;
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header{
+        background-color: var(--secondary);
+        .imgHolder{
+            padding:  1rem 0 0 0 ;
+            width: 6rem;
+            
+            img{
+                transform: translateY(50%);
+                border-radius: 100%;
+                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}
