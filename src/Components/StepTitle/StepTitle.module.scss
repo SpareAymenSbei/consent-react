@@ -1,0 +1,50 @@
+.stepTitle {
+    margin: 4rem 4rem 0rem 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    .meta {
+        text-align: center;
+
+        .metaText {
+            margin: 1rem auto;
+            max-width: 38rem;
+            font-weight: 300;
+            font-size: clamp(18px, 3vw, 24px);
+        }
+    }
+
+    svg {
+        font-size: 3rem;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: .2rem;
+        transition: all .2s ease-in;
+    }
+
+    svg:hover {
+        background: #eee;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .stepTitle {
+        flex-direction: column;
+        margin: 3rem 2rem 0 2rem;
+
+        .meta {
+            text-align: start;
+
+            .metaText {
+                max-width: 100%;
+            }
+        }
+
+        svg {
+            font-size: 2.5rem
+        }
+    }
+}

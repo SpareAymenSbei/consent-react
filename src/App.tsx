@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useContext } from 'react'
 import './App.css'
 import Header from './Components/Header/Header'
+import Stepper from './Components/Stepper/Stepper';
+import StepTitle from './Components/StepTitle/StepTitle';
+import { StepContext } from './context/step-context'
+import stepTitleList from './types/step-title.model';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const ctx = useContext(StepContext);
   return (
     <div className="App">
       <Header/>
+      <StepTitle/>
+      <Stepper/>
     </div>
   )
 }
