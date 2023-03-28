@@ -1,0 +1,30 @@
+.bank {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-inline: 2rem;
+    img {
+        width: 3rem;
+        height: 2rem;
+        padding: .5rem;
+        background-color: #F4F5FF;
+        border-radius: 15px;
+        object-fit: contain;
+    }
+
+    .name {
+        font-weight: 500;
+        font-size: clamp(15px, 1vw, 22px);
+    }
+}
+
+.bank:active {
+    cursor: pointer;
+    background-color: #cccccc2a;
+}
+
+.bank:not(:last-child) {
+    margin-bottom: 1.5rem;
+}

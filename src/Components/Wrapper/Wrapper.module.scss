@@ -1,0 +1,27 @@
+.wrapper {
+    width: 43%;
+    margin: 0 auto;
+    padding-block: 2rem 4rem;
+}
+
+.wrapper>* {
+    animation: fadeIn .5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        box-sizing: border-box;
+        padding-inline: 2rem;
+        width: 100%;
+    }
+}

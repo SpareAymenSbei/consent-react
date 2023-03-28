@@ -1,5 +1,5 @@
 .stepTitle {
-    margin: 4rem 4rem 0rem 4rem;
+    margin: 6rem 4rem 0rem 4rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -8,17 +8,27 @@
 
     .meta {
         text-align: center;
+        .icon_title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .metaTitle {
+            font-size: clamp(18px, 2.5vw, 28px);
+            font-weight: 500;
+        }
 
         .metaText {
             margin: 1rem auto;
-            max-width: 38rem;
+            max-width: 34rem;
             font-weight: 300;
-            font-size: clamp(18px, 3vw, 24px);
+            font-size: clamp(14px, 1.8vw, 18px);
         }
     }
 
     svg {
-        font-size: 3rem;
+        font-size: 2.5rem;
         cursor: pointer;
         border-radius: 50%;
         padding: .2rem;
@@ -34,17 +44,23 @@
     .stepTitle {
         flex-direction: column;
         margin: 3rem 2rem 0 2rem;
+        gap: .5rem;
 
         .meta {
             text-align: start;
-
+            .icon_title{
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+            }
             .metaText {
-                max-width: 100%;
+                max-width: 80%;
+                margin: .8rem 0;
             }
         }
 
         svg {
-            font-size: 2.5rem
+            font-size: 1.8rem
         }
     }
 }

@@ -1,0 +1,41 @@
+.item {
+    width: calc(100% - 5vw);
+    margin: 0 auto 2rem auto;
+    display: flex;
+    gap: 1.5rem;
+    text-align: justify;
+    align-items: start;
+
+    .item_img {
+        width: 2rem;
+        margin-top: 5px;
+    }
+
+    .title {
+        font-size: clamp(18px,1.4vw,22px);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-block-end: .5rem;
+    }
+
+    .description {
+        font-size: clamp(14px,1vw,16px);
+        color: #ccc;
+        margin-top: .5rem;
+        line-height: 1.5;
+    }
+
+
+}
+
+.item:last-child .item_img {
+    width: 1.5rem;
+}
+
+@media screen and (max-width:420px) {
+    .item{
+        .item_img{
+            display: none;
+        }
+    }
+}

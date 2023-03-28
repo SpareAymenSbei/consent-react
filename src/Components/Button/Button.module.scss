@@ -1,0 +1,24 @@
+.Button {
+    border: none;
+    cursor: pointer;
+    padding: 1rem 4rem;
+    font-size: clamp(16px, 1vw, 22px);
+    border-radius: 12px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.primary:hover,
+.primary:active {
+    background-color: var(--primary_hover);
+}
+
+.secondary {
+    background-color: transparent;
+    color: var(--primary);
+}

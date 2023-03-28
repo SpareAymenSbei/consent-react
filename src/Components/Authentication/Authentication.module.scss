@@ -1,0 +1,40 @@
+.auth {
+    .dates {
+        padding-top: 2rem;
+        margin: 0 auto;
+        width: fit-content;
+        padding-block-end: 2rem;
+
+        .start_date,
+        .end_date {
+            margin-top: .5rem;
+            font-size: clamp(15px, 1.1vw, 17px);
+            text-align: start;
+        }
+
+        .start_date::before,
+        .end_date::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--light_secondary);
+            margin-right: 15px;
+        }
+    }
+
+    .info {
+        text-align: center;
+        color: var(--primary);
+        font-size: clamp(14px, 1vw, 16px);
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .start_date,
+    .end_date {
+        font-size: 3.5vw !important;
+    }
+}

@@ -1,5 +1,5 @@
 .stepper {
-    width: 75%;
+    width: 55%;
     margin: 0 auto;
     padding: 2rem 0;
     position: relative;
@@ -12,6 +12,7 @@
         li {
             z-index: 1;
             width: 33%;
+            font-size: clamp(14px, 1.8vw, 18px);
         }
 
         li::before {
@@ -52,9 +53,15 @@
         width: 50%;
         height: .25rem;
         background-color: var(--primary);
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+        transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.25);
     }
 
    
 }
 
+
+@media screen and (max-width:768px){
+   .stepper{
+    width: 100%;
+   }
+}

@@ -1,0 +1,65 @@
+.consent {
+    .input_holder {
+        position: relative;
+        margin-block-end: 2rem;
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: .5rem 1rem;
+            font-size: clamp(16px, 1vw, 22px);
+            padding: .8rem 1rem;
+            border: none;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #ccc;
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.9rem;
+            background: white;
+            padding: .5rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .hint{
+        text-align: center;
+        font-size: clamp(12px,1vw,16px);
+        line-height: 1.6;
+        
+    }
+    .blue{
+        margin-block: 6rem 2rem;
+        color: var(--primary);
+        .desc{
+           margin-top: .3rem;
+        }
+    }
+   
+}
+
+@media screen and (max-width:768px) {
+    .hint{
+        padding-inline: 4rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hint{
+        padding-inline: 1rem;
+    }
+}
