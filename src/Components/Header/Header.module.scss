@@ -1,13 +1,12 @@
 .header {
     position: relative;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     align-items: center;
     display: flex;
 
     .imgHolder {
         margin: 0 auto;
-        width: 4rem;
-
+        width: 4.5rem;
         img {
             width: 100%;
             border-radius: 100%;
@@ -33,6 +32,10 @@
 
 @media screen and (max-width:768px) {
     .header {
+        padding-top: 1.5rem;
+        .imgHolder {
+            width: 4rem;
+        }
         .icon {
             left: 1.5rem;
             font-size: 1.5rem;

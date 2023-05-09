@@ -1,19 +1,13 @@
 .stepTitle {
-    margin: 6rem 4rem 0rem 4rem;
+    margin-block: 5rem 0 ;
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
-    align-items: flex-start;
 
     .meta {
-        text-align: center;
-        .icon_title{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
+        text-align: start;
+        
         .metaTitle {
             font-size: clamp(18px, 2.5vw, 28px);
             font-weight: 500;
@@ -24,6 +18,7 @@
             max-width: 34rem;
             font-weight: 300;
             font-size: clamp(14px, 1.8vw, 18px);
+            line-height: 1.4;
         }
     }
 

@@ -11,8 +11,9 @@ function App() {
   return (
     <>
       <Header />
-      <StepTitle />
       <Stepper />
+      <StepTitle />
+
       <Wrapper />
     </>
   )

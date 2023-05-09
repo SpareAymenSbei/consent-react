@@ -4,8 +4,8 @@ export interface StepTitleModel{
 }
 const stepTitleList:StepTitleModel[] = [
     {
-        title: 'Select the Bank you giving access to',
-        description: 'After selecting the Bank we will transfer you securely to your banking app to authenticate the connection'
+        title: 'Select the Bank',
+        description: 'Select the bank you are giving access to after selecting the Bank we will transfer you securely, to your banking app to authenticate this connection.'
     },
     {
         title: 'We need your permissions',

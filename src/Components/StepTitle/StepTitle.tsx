@@ -8,10 +8,7 @@ function StepTitle() {
   return (
     <div className={Classes.stepTitle}>
       <div className={Classes.meta}>
-        <div className={Classes.icon_title}>
-          <BiLeftArrowAlt className='title' onClick={context.prevStep} />
           <div className={`${Classes.metaTitle}`}>{stepTitleList[context.stepCount].title}</div>
-        </div>
         <div className={`${Classes.metaText}`}>{stepTitleList[context.stepCount].description}</div>
       </div>
     </div>

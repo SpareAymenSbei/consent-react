@@ -16,9 +16,6 @@ function Stepper() {
                         </li>
                     ))}
             </ul>
-            <div className={Classes.line}>
-                <div className={Classes.lineProgress} style={{ width: context.stepperWidth + '%' }}></div>
-            </div>
         </div>
     )
 }
