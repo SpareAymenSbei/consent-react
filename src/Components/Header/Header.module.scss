@@ -1,34 +1,41 @@
 .header {
-    width: 100%;
+    position: relative;
+    padding-top: 1.5rem;
+    align-items: center;
+    display: flex;
+
     .imgHolder {
         margin: 0 auto;
-        width:4rem;
-        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-        border-radius: 0px 0px 150px 150px;
-        background-color: var(--secondary);
+        width: 4rem;
+
         img {
             width: 100%;
+            border-radius: 100%;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
         }
     }
-    p{
-        margin: 0;
-        color: black;
-        
+
+    .icon {
+        font-size: 2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: .2rem;
+        transition: all .2s ease-in;
+        position: absolute;
+        left: 3rem;
     }
+
+    .icon:hover {
+        background: #eee;
+    }
+
 }
 
 @media screen and (max-width:768px) {
-    .header{
-        background-color: var(--secondary);
-        .imgHolder{
-            padding:  1rem 0 0 0 ;
-            width: 6rem;
-            
-            img{
-                transform: translateY(50%);
-                border-radius: 100%;
-                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
-            }
+    .header {
+        .icon {
+            left: 1.5rem;
+            font-size: 1.5rem;
         }
     }
 }
